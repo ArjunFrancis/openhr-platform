@@ -818,7 +818,7 @@ function MessageComposer({ conversationId, onSend, suggestions }) {
 // Messages Container with Infinite Scroll
 function MessagesContainer({ messages, conversationId, userId }) {
   const [isLoadingMore, setIsLoadingMore] = useState(false);
-  const messagesEndRef = useRef(null);
+  const messagesEndRef = useRef();
 
   // Auto-scroll to bottom on new messages
   useEffect(() => {
@@ -1072,7 +1072,7 @@ function MessageBubble({ message, isOwn, isLastInGroup }) {
 This completes the UI/UX specifications for OpenHR's MVP, providing a cohesive, performant, and user-centric experience for co-founder matching.
 
 **References:**
-- Next.js App Router [web:261]
-- Tailwind CSS Design System [web:262]
-- shadcn/ui Components [web:263]
-- Framer Motion Animations [web:264]
+- Next.js App Router
+- Tailwind CSS Design System
+- shadcn/ui Components
+- Framer Motion Animations
